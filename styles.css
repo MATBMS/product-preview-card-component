@@ -53,6 +53,32 @@ main {
   width: 300px;
 }
 
+.right {
+  padding: 32px;
+}
+
+.product-name {
+  margin-top: 20px;
+}
+
+.product-description {
+  margin-top: 24px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.new-price {
+  margin-right: 19px;
+}
+
+.add-to-cart {
+  margin-top: 30px;
+}
+
 /* == TYPOGRAPHY == */
 @font-face {
   font-family: 'Montserrat';
