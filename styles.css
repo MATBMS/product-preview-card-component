@@ -46,6 +46,7 @@ main {
 .container {
   display: flex;
   background-color: white;
+  border-radius: 10px;
 }
 
 .left,
@@ -76,6 +77,10 @@ main {
 }
 
 .add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11.61px;
   margin-top: 30px;
 }
 
@@ -142,6 +147,8 @@ main {
 /* == PRODUCT IMAGE == */
 .product-img {
   height: 450px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 /* == PRICE == */
@@ -154,5 +161,10 @@ main {
 .add-to-cart {
   width: 236px;
   height: 48px;
+  border-radius: 8px;
   background-color: #3D8168;
+}
+
+.add-to-cart:hover {
+  background-color: #1A4032;
 }
