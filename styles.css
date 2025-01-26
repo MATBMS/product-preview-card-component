@@ -1,5 +1,4 @@
 /* == GENERAL == */
-/* CSS Reset */
 * {
   margin: 0;
   padding: 0;
@@ -52,6 +51,14 @@ main {
 .left,
 .right {
   width: 300px;
+}
+
+.left {
+  background-image: url(./assets/images/image-product-desktop.jpg);
+  background-size: cover;
+  height: 450px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .right {
@@ -144,13 +151,6 @@ main {
   color: #fff;
 }
 
-/* == PRODUCT IMAGE == */
-.product-img {
-  height: 450px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
 /* == PRICE == */
 .old-price {
   font-size: 13px;
@@ -167,4 +167,46 @@ main {
 
 .add-to-cart:hover {
   background-color: #1A4032;
+}
+
+/* == MOBILE == */
+
+@media (max-width: 375px) {
+
+  /* == LAYOUT == */
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    background-image: url(./assets/images/image-product-mobile.jpg);
+    background-size: cover;
+    width: 343px;
+    height: 240px;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .right {
+    padding: 24px;
+  }
+
+  .product-name {
+    margin-top: 12px;
+    width: 294px;
+  }
+
+  .product-description {
+    margin-top: 16px;
+    width: 294px;
+  }
+
+  .product-price {
+    margin-top: 24px;
+  }
+
+  .add-to-cart {
+    width: 294px;
+    margin-top: 20px;
+  }
 }
